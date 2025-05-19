@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Styling Properties</title>
+    <style>
+        #p1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            color: brown;
+        }
+
+        #p2 {
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 3px solid black
+        }
+
+        .a {
+            transform: rotate(20deg)
+        }
+
+        .b {
+            transform: skewX(120deg)
+        }
+
+        .c {
+            transform: scaleY(0.4)
+        }
+
+        h2 {
+            text-decoration: overline;
+            text-transform: capitalize;
+        }
+
+        h3 {
+            text-decoration: underline;
+            text-transform: lowercase;
+        }
+
+        h4 {
+            text-decoration: line-through;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            text-decoration: underline overline;
+            text-transform: none;
+        }
+
+        * {
+            text-align: center;
+            font-family: monospace;
+        }
+
+        #text {
+            text-shadow: 2px 2px 1px #CC5500;
+            /* (right-offset)px (left-offset)px (fade)px color*/
+        }
+
+        #box {
+            box-shadow: 9px 9px 5px #301934;
+            /* (right-offset)px (left-offset)px (fade)px color*/
+        }
+
+        #indent {
+            text-indent: 10%; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Typography</h1>
+    <p id="p1">Welcome to Codingal</p>
+    <p id="p2">Welcome to Codingal</p>
+    <div class="a">Hello World!!</div><br>
+    <div class="b">Hello World!!</div><br>
+    <div class="c">Hello World!!</div><br>
+    <h2>Codingal</h2>
+    <h3>Codingal</h3>
+    <h4>Codingal</h4>
+    <h5>Codingal</h5>
+    <h1 id="text">We can use text-shadow to give shadow to text itself</h1>
+
+    <h1 id="box">Or use box-shadow to give shadow to the element</h1>
+
+    <div>
+        <p>This is an example of text-indent.</p>
+        <p id="indent">This is an example of text-indent.</p>
+    </div>
+</body>
+
+</html>
